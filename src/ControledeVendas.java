@@ -24,6 +24,17 @@ public class ControledeVendas {
                 String bestseller ="";
 
                 do {
+                    Sall = 0;
+                    SallLiq = 0;
+                    ComAll = 0;
+                    Avgsales = 0;
+                    aboveavg = 0;
+                    card = 0;
+                    cash = 0;
+                    pix = 0;
+                    bsale = -1.0;
+                    lsale = 999999999;
+
                 for(i = 0; i < n; i++) { 
                     System.out.println("Enter the seller's name.");
                     name[i] = sc.nextLine();
@@ -31,6 +42,7 @@ public class ControledeVendas {
                     do {
                         System.out.println("Enter the sale prince.");
                     salevalue[i] = sc.nextDouble();
+                    sc.nextLine();
                         } while (salevalue[i] < 0);
                     
                     do {
